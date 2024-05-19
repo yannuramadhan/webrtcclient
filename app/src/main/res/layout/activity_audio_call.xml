@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/avaLightBlue"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:paddingTop="12dp"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/call_options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/avaBlue"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/make_end_call_option_layout"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewCallState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="6dp"
+                android:text="@string/call_state"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="6dp"
+                android:text="@string/zero_zero"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/make_end_call_option_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.30"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonMuteMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_activecall_mute" />
+
+            <ImageButton
+                android:id="@+id/audioDeviceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_activecall_speaker_off" />
+
+            <ImageButton
+                android:id="@+id/imageButtonLaunchNumberPad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_activecall_dtmf" />
+
+            <ImageButton
+                android:id="@+id/holdButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_activecall_advctrl_hold" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEndCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_activecall_hangup" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/call_options_layout"
+        android:layout_marginStart="@dimen/stats_item_padding">
+
+
+
+        <ImageView
+            android:id="@+id/ivCallQualityRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/stats_item_padding"
+            android:src="@drawable/ic_networkquality_5" />
+
+        <TextView
+            android:id="@+id/textViewCallQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/stats_item_padding"
+            android:layout_toRightOf="@id/ivCallQualityRating"
+            android:text="@string/Excellent"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!-- <Button
+         android:id="@+id/audioDeviceButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/call_options_layout"
+         android:layout_centerHorizontal="true"/>-->
+
+</RelativeLayout>

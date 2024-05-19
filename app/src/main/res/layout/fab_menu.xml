@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.clans.fab.FloatingActionMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:menu_colorNormal="@color/avaBlue" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_call_white_24dp"
+        app:fab_colorNormal="@color/avaRed"
+        app:fab_label="Start Voice"
+        app:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_videocam_white_24dp"
+        app:fab_colorNormal="@color/avaRed"
+        app:fab_label="Start Video"
+        app:fab_size="mini" />
+
+
+
+
+
+
+
+</com.github.clans.fab.FloatingActionMenu>

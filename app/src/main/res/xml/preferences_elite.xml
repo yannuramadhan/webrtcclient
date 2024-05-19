@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/menu_details_header">
+
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_display_name_elite"
+            android:title="@string/preference_display_name"
+            android:summary="@string/preference_empty"/>
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:inputType="number"
+            android:key="@string/preference_user_name_elite"
+            android:title="@string/preference_user_name"
+            android:summary="@string/preference_empty"/>
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:inputType="number"
+            android:key="@string/preference_number_to_call_elite"
+            android:title="@string/preference_number_to_call"
+            android:summary="@string/preference_empty" />
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_aawg_server_elite"
+            android:title="Server Address"
+            android:summary="@string/preference_empty"/>
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_context_elite"
+            android:title="@string/preference_context"
+            android:summary="@string/preference_empty"/>
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_topic_elite"
+            android:title="@string/preference_topic"
+            android:summary="@string/preference_empty"/>
+    </PreferenceCategory>
+<!--    <PreferenceCategory android:title="@string/category_aawg">-->
+        <EditTextPreference
+            android:defaultValue="@string/aawg_port"
+            android:inputType="number"
+            android:key="@string/preference_aawg_port_elite"
+            android:summary="@string/aawg_port"
+            android:title="@string/preference_aawg_port" />
+        <CheckBoxPreference
+            android:title="@string/preference_aawg_secure_elite"
+            android:defaultValue="@string/aawg_secure"
+            android:key="@string/preference_aawg_secure_elite" />
+        <EditTextPreference
+            android:defaultValue="@string/aawg_url_path"
+            android:key="@string/preference_aawg_url_path_elite"
+            android:title="@string/preference_aawg_url_path"
+            android:summary="@string/aawg_url_path" />
+<!--    </PreferenceCategory>-->
+<!--    <PreferenceCategory android:title="@string/category_token">-->
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_token_server_elite"
+            android:title="@string/preference_token_server"
+            android:summary="@string/preference_empty"/>
+        <EditTextPreference
+            android:defaultValue="@string/token_port"
+            android:inputType="number"
+            android:key="@string/preference_token_port_elite"
+            android:summary="@string/token_port"
+            android:title="@string/preference_token_port" />
+        <CheckBoxPreference
+            android:title="@string/preference_token_secure"
+            android:defaultValue="@string/token_secure"
+            android:key="@string/preference_token_secure_elite" />
+        <EditTextPreference
+            android:defaultValue="@string/token_url_path"
+            android:inputType="number"
+            android:key="@string/preference_token_url_path_elite"
+            android:summary="@string/token_url_path"
+            android:title="@string/preference_token_url_path" />
+<!--    </PreferenceCategory>-->
+<!--    <PreferenceCategory android:title="@string/services_work_api">-->
+        <EditTextPreference
+            android:defaultValue="@string/priority"
+            android:key="@string/preference_priority_elite"
+            android:inputType="number"
+            android:title="@string/preference_priority"
+            android:summary="@string/priority" />
+        <EditTextPreference
+            android:defaultValue="@string/locale"
+            android:key="@string/preference_locale_elite"
+            android:title="@string/preference_locale"
+            android:summary="@string/locale" />
+        <EditTextPreference
+            android:defaultValue="@string/strategy_idle"
+            android:key="@string/preference_strategy_elite"
+            android:title="@string/preference_strategy"
+            android:summary="@string/strategy_idle" />
+<!--    </PreferenceCategory>-->
+
+<!--    <PreferenceCategory android:title="@string/resources_work_api">-->
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_source_name_elite"
+            android:title="@string/preference_source_name"
+            android:summary="@string/preference_empty" />
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_resource_id_elite"
+            android:title="@string/preference_resource_id"
+            android:summary="@string/preference_empty" />
+<!--    </PreferenceCategory>-->
+<!--    <PreferenceCategory android:title="@string/email_settings">-->
+        <EditTextPreference
+            android:defaultValue="@string/preference_empty"
+            android:key="@string/preference_email_address_elite"
+            android:title="@string/preference_email_address"
+            android:summary="@string/preference_empty"/>
+<!--    </PreferenceCategory>-->
+<!--    <PreferenceCategory android:title="@string/logging_settings">-->
+        <CheckBoxPreference
+            android:title="@string/preference_log_to_device"
+            android:defaultValue="@string/log_to_device"
+            android:key="@string/preference_log_to_device_elite" />
+        <EditTextPreference
+            android:defaultValue="@string/log_file_name"
+            android:key="@string/preference_log_file_name_elite"
+            android:title="@string/preference_log_file_name"
+            android:summary="@string/log_file_name"/>
+<!--    </PreferenceCategory>-->
+</PreferenceScreen>

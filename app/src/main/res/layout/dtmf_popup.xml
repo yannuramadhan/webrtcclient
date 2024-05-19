@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:drawable/progress_horizontal"
+    android:backgroundTint="@color/avaBlue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dtmf1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_1"
+                android:textColor="@color/white"
+                android:tag="1" />
+
+            <Button
+                android:id="@+id/dtmf2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_2"
+                android:textColor="@color/white"
+                android:tag="2" />
+
+            <Button
+                android:id="@+id/dtmf3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="4"
+                android:layout_row="1"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_3"
+                android:textColor="@color/white"
+                android:tag="3" />
+
+            <Button
+                android:id="@+id/dtmf4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_4"
+                android:textColor="@color/white"
+                android:tag="4" />
+
+            <Button
+                android:id="@+id/dtmf5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_5"
+                android:textColor="@color/white"
+                android:tag="5" />
+
+            <Button
+                android:id="@+id/dtmf6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="4"
+                android:layout_row="2"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_6"
+                android:textColor="@color/white"
+                android:tag="6" />
+
+            <Button
+                android:id="@+id/dtmf7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_7"
+                android:textColor="@color/white"
+                android:tag="7" />
+
+            <Button
+                android:id="@+id/dtmf8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_8"
+                android:textColor="@color/white"
+                android:tag="8" />
+
+            <Button
+                android:id="@+id/dtmf9"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="4"
+                android:layout_row="3"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_9"
+                android:textColor="@color/white"
+                android:tag="9" />
+
+            <Button
+                android:id="@+id/dtmf_asterix"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_asterisk"
+                android:textColor="@color/white"
+                android:tag="*" />
+
+            <Button
+                android:id="@+id/dtmf0"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="3"
+                android:layout_row="5"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_0"
+                android:textColor="@color/white"
+                android:tag="0" />
+
+            <Button
+                android:id="@+id/dtmf_hash"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_column="4"
+                android:layout_row="5"
+                android:background="?android:selectableItemBackground"
+                android:onClick="dtmf"
+                android:padding="5dp"
+                android:text="@string/dtmf_hash"
+                android:textColor="@color/white"
+                android:tag="#" />
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>

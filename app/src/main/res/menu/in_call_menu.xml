@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".application.MainActivity">
+    <item
+        android:id="@+id/action_call_statistics"
+        android:orderInCategory="100"
+        android:title="@string/action_call_statistics"
+        app:showAsAction="never" />
+
+</menu>

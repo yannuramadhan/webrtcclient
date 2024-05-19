@@ -1,0 +1,21 @@
+apply plugin: 'org.sonarqube'
+
+// noinspection is used to remove some "warnings" from Android Studio
+sonarqube {
+    //noinspection GroovyAssignabilityCheck
+    properties {
+        // Bamboo sonar builds override sonar.host.url to the https://sonar.forge.avaya.com:9000 server
+        property "sonar.host.url", "http://sonar.forge.avaya.com:9000"
+        property "sonar.projectKey", "com.avaya.refclient"
+        property "sonar.projectName", "Android_RefClient"
+		property "sonar.login", "87f1229a07458dc6928cd3fe4d55227bd4403e23"
+		
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.sources", "src/main/java" // first defines where the java files are, then where the xml files are
+        
+        property "sonar.scm.provider", "git"
+        
+        property "sonar.android.lint.report", "build/outputs/lint-results-betaDebug.xml" // path to lint reports
+    }
+}
+
