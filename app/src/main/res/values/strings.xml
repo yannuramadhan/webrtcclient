@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wahana WebRTC Client</string>
+    <string name="app_name">Smart WebRTC</string>
     <string name="app_version">4.0</string>
     <string name="action_settings">Settings</string>
     <string name="action_attributes">Routing Attributes</string>
@@ -153,8 +153,8 @@
     <string name="token_secure">true</string>
     <string name="token_url_path">token-generation-service/token/getEncryptedToken</string>
 
-    <string name="menu_background_text_oceana">Wahana WebRTC Client</string>
-    <string name="menu_background_text_elite">Wahana WebRTC Client</string>
+    <string name="menu_background_text_oceana">Smart WebRTC</string>
+    <string name="menu_background_text_elite">Smart WebRTC</string>
     <string name="menu_background_text_audio">Enhance Your Customer App by Adding Avaya Oceana™ WebRTC Audio</string>
     <string name="menu_background_text_video">Enhance Your Customer App by Adding Avaya Oceana™ WebRTC Video</string>
     <string name="available_resolutions">Available Resolutions</string>

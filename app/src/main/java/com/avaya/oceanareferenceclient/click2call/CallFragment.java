@@ -73,22 +73,26 @@ public class CallFragment extends AbstractCallFragment {
     @Override
     public void getElementReferences() {
         resolutionSpinnerView = getActivity().findViewById(R.id.resolution_spinner);
-//        orientationSpinnerView = getActivity().findViewById(R.id.orientation_spinner);
-
+        orientationSpinnerView = getActivity().findViewById(R.id.orientation_spinner);
         availableResolutionsText = getActivity().findViewById(R.id.textViewResolutions);
         fabMenu = getActivity().findViewById(R.id.fabMenu);
 
         fabVoice = fabMenu.findViewById(R.id.fabVoice);
         fabVideo = fabMenu.findViewById(R.id.fabVideo);
+
+        buttonStartVoice = getActivity().findViewById(R.id.buttonStartVoice);
+        buttonStartVideo = getActivity().findViewById(R.id.buttonStartVideo);
     }
 
     protected void showUIElements() {
-        resolutionSpinnerView.setVisibility(View.VISIBLE);
-        availableResolutionsText.setVisibility(View.VISIBLE);
+        resolutionSpinnerView.setVisibility(View.INVISIBLE);
+        orientationSpinnerView.setVisibility(View.INVISIBLE);
+        availableResolutionsText.setVisibility(View.INVISIBLE);
     }
 
     protected void hideUIElements() {
         resolutionSpinnerView.setVisibility(View.INVISIBLE);
+        orientationSpinnerView.setVisibility(View.INVISIBLE);
         availableResolutionsText.setVisibility(View.INVISIBLE);
     }
 

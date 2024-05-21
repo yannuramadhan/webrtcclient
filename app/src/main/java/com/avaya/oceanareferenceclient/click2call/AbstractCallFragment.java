@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
@@ -43,6 +44,8 @@ public abstract class AbstractCallFragment extends Fragment implements ViewHandl
     private boolean skipOnePermissionCheck = false;
     protected FloatingActionButton fabVoice;
     protected FloatingActionButton fabVideo;
+    protected ImageButton buttonStartVoice;
+    protected ImageButton buttonStartVideo;
     protected FloatingActionMenu fabMenu;
 
     private boolean bVideo;
@@ -185,6 +188,23 @@ public abstract class AbstractCallFragment extends Fragment implements ViewHandl
             }
         });
         fabVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bVideo = true;
+                fabMenu.toggle(true);
+                retrieveTokenWithCallback();
+            }
+        });
+
+        buttonStartVoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bVideo = false;
+                fabMenu.toggle(true);
+                retrieveTokenWithCallback();
+            }
+        });
+        buttonStartVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bVideo = true;
